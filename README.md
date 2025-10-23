@@ -2,7 +2,7 @@
 ### SNU KDT 6조
 ### 권서영 이소민 이유림 조성우 지희선 홍예나
 
-> **목표**: 금융권 신청/신고서 등 서식 기반 문서에서 **손글씨 영역을 탐지**하고 **문자를 인식**하여 디지털 텍스트로 변환  
+> **목표**: 금융권 신청/신고서 서식 기반 문서에서 **손글씨 영역을 탐지**하고 **문자를 인식**하여 디지털 텍스트로 변환  
 > **프로세스**: Object Detection → Text Recognition → Prediction_Pipeline  
 > **데이터**: [AI Hub의 OCR 데이터(금융 및 물류)](https://www.aihub.or.kr/aihubdata/data/view.do?pageIndex=1&currMenu=115&topMenu=100&srchOptnCnd=OPTNCND001&searchKeyword=&srchDetailCnd=DETAILCND001&srchOrder=ORDER001&srchPagePer=20&srchDataRealmCode=REALM015&aihubDataSe=data&dataSetSn=71301)에서 6가지 금융 문서(신고서1개 신청서 5개) 양식 사용
 
@@ -59,23 +59,22 @@
 ### 2.3 결과 요약
 - **탐지 단일 성능**
   - *Baseline CNN(Detection)* F1: 0.1967  
-  - *R-CNN* F1: **0.999**  
+  - **R-CNN F1: 0.999**  
   - *CRAFT* F1: 0.9783
 - **인식 단일 성능 (CER, ↓가 좋음)**
   - *Baseline CNN(Recognition)*: 0.27  
   - **C-RNN: 0.021**  
-  - ViT: 0.03  
-  - Swin: 0.30
+  - *ViT*: 0.03  
+  - *Swin*: 0.30
 - **엔드-투-엔드 조합 성능 (CER)**
   - CRAFT + Swin: 0.513  
   - R-CNN + Swin: 0.824  
   - CRAFT + ViT: 0.270  
   - R-CNN + ViT: 0.064  
-  - **R-CNN + C-RNN: 0.0207 ← 최종 채택**
+  - **R-CNN + C-RNN: 0.0207 ← 최종 선정**
 - **해석**
-  - 탐지 단계는 **R-CNN**이 최고 F1로 가장 안정  
+  - 탐지 단계는 **R-CNN**이 최고 F1
   - 인식 단계는 **C-RNN**이 CER 최저  
-  - Transformer 계열은 데이터 규모/특성(고유명사 다수, 문맥 이득 제한)에서 상대적으로 불안정
 
 ---
 
