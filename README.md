@@ -73,10 +73,11 @@
   - CRAFT + ViT: 0.270  
   - R-CNN + ViT: 0.064  
   - **R-CNN + C-RNN: 0.0207 ← 최종 선정**
-- **해석**
-  - 탐지 단계는 **R-CNN**이 최고 F1
-  - 인식 단계는 **C-RNN**이 CER 최저  
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/16e4d167-7d8f-4114-93f7-e11a2be99058"
+       alt="손글씨_250910_162848-3_vis"
+       width="600" height="800">
+</p>
 ---
 
 ## 3. 결론
