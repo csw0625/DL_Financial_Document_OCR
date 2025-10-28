@@ -47,7 +47,8 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/acceda34-d60c-4135-b112-0bf7e52c6977"
        alt="detection_example"
-       width="900" height="300">
+       width="900" height="300"><br>
+    <sub><em>6개 문서 양식</em></sub>
 </p>
 
 - **Object Detection (객체탐지)**
@@ -55,9 +56,10 @@
   - **R-CNN 계열**: 영역 제안 기반 2-Stage(ResNet-50 백본, RPN+ROI Heads)
   - **CRAFT**: 글자 영역에 특화된 Region/Affinity score 기반 텍스트 탐지
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/92d46cff-ad57-4c0b-81b5-d27f07351ba2"
+  <img src="https://github.com/user-attachments/assets/397398da-4048-4e60-b69a-cf21896a024e"
        alt="detection_example"
-       width="700" height="300">
+       width="700" height="300"><br>
+<sub><em>손글씨 탐지 결과(R-CNN 예측 예시)</em></sub>
 </p>
 
 - **Text Recognition (문자인식)**
@@ -85,10 +87,12 @@
   - R-CNN + ViT: 0.064  
   - **R-CNN + C-RNN: 0.0207 ← 최종 선정**
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/16e4d167-7d8f-4114-93f7-e11a2be99058"
+  <img src="https://github.com/user-attachments/assets/50ef0321-412a-4c76-a8cd-7fd4c7de4556"
        alt="손글씨_250910_162848-3_vis"
-       width="600" height="800">
+       width="700" height="400"><br>
+<sub><em>R-CNN + C-RNN 2-stage prediction</em></sub>
 </p>
+
 
 ---
 
