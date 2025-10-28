@@ -43,12 +43,23 @@
 - **Preprocessing**
   - 문서 이미지 정규화, 크롭/스케일(예: 1024×1024), 아티팩트 제거
   - 샘플 분포 점검, 학습/검증 분리(문서 양식/필기자 분리 유지)
-<img width="1335" height="311" alt="output" src="https://github.com/user-attachments/assets/acceda34-d60c-4135-b112-0bf7e52c6977" />
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/acceda34-d60c-4135-b112-0bf7e52c6977"
+       alt="detection_example"
+       width="900" height="300">
+</p>
 
 - **Object Detection (객체탐지)**
   - **Baseline CNN(객체탐지)**: 직접 구현한 경량 CNN 기반 기본선
   - **R-CNN 계열**: 영역 제안 기반 2-Stage(ResNet-50 백본, RPN+ROI Heads)
   - **CRAFT**: 글자 영역에 특화된 Region/Affinity score 기반 텍스트 탐지
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/92d46cff-ad57-4c0b-81b5-d27f07351ba2"
+       alt="detection_example"
+       width="700" height="300">
+</p>
+
 - **Text Recognition (문자인식)**
   - **C-RNN**: CNN feature → Bi-LSTM 시퀀스 인코딩 → CTC Loss
   - **ViT**: 패치 기반 Self-Attention, CTC 학습
