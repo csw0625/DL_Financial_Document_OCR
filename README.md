@@ -28,8 +28,6 @@
   - 문서 이미지에서 손글씨만 **정확히 분리·탐지**하고, 인식 모델로 **문자열**을 생성
   - 금융 도메인의 높은 정확도 요구에 맞춰 **탐지 F1**과 **인식 CER**를 핵심 지표로 설정
   - 최종 **엔드-투-엔드 성능**을 위해 탐지-인식 조합을 비교하여 최적 조합을 도출
-<img width="1335" height="311" alt="output" src="https://github.com/user-attachments/assets/acceda34-d60c-4135-b112-0bf7e52c6977" />
-
 ---
 
 ## 2. 분석
@@ -45,6 +43,8 @@
 - **Preprocessing**
   - 문서 이미지 정규화, 크롭/스케일(예: 1024×1024), 아티팩트 제거
   - 샘플 분포 점검, 학습/검증 분리(문서 양식/필기자 분리 유지)
+<img width="1335" height="311" alt="output" src="https://github.com/user-attachments/assets/acceda34-d60c-4135-b112-0bf7e52c6977" />
+
 - **Object Detection (객체탐지)**
   - **Baseline CNN(객체탐지)**: 직접 구현한 경량 CNN 기반 기본선
   - **R-CNN 계열**: 영역 제안 기반 2-Stage(ResNet-50 백본, RPN+ROI Heads)
